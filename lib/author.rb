@@ -5,8 +5,8 @@ class Author
     @posts = []
   end
 
-  def add_post(title="")
-    new_p = Post.all.find do |p| p.title == title end
+  def add_post(post="")
+    new_p = post
     new_p.author = self
     @posts << new_p
   end
