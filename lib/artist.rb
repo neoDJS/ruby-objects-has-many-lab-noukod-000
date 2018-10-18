@@ -6,8 +6,8 @@ class Artist
     @songs = []
   end
 
-  def add_song(title="")
-    new_s = Song.all.find do |s| s.title == title end
+  def add_song(song="")
+    new_s = song
     new_s.author = self
     @songs << new_s
   end
